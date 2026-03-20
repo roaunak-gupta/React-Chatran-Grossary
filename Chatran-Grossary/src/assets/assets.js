@@ -1,3 +1,4 @@
+// SVG Imports
 import logo from "./SVG/logo.svg";
 import chatran_logo from "./SVG/chatran.svg";
 import search_icon from "./SVG/search_icon.svg";
@@ -12,8 +13,6 @@ import add_icon from "./SVG/add_icon.svg";
 import refresh_icon from "./SVG/refresh_icon.svg";
 import product_list_icon from "./SVG/product_list_icon.svg";
 import order_icon from "./SVG/order_icon.svg";
-import upload_area from "./PNG/upload_area.png";
-import profile_icon from "./PNG/profile_icon.png";
 import menu_icon from "./SVG/menu_icon.svg";
 import cross_icon from "./SVG/cross.svg";
 import delivery_truck_icon from "./SVG/delivery_truck_icon.svg";
@@ -23,11 +22,19 @@ import box_icon from "./SVG/box_icon.svg";
 import trust_icon from "./SVG/trust_icon.svg";
 import black_arrow_icon from "./SVG/black_arrow_icon.svg";
 import white_arrow_icon from "./SVG/white_arrow_icon.svg";
+import add_address_iamge from "./SVG/add_address_image.svg";
+import icon_instagram from "./SVG/icon_instagram.svg";
+import icon_youtube from "./SVG/icon_youtube.svg";
+import icon_linkedin from "./SVG/icon_linkedin.svg";
+
+// PNG Import
+
+import upload_area from "./PNG/upload_area.png";
+import profile_icon from "./PNG/profile_icon.png";
 import main_banner_bg from "./PNG/main_banner_bg.png";
 import main_banner_bg_sm from "./PNG/main_banner_bg_sm.png";
 import bottom_banner_image from "./PNG/bottom_banner_image.png";
 import bottom_banner_image_sm from "./PNG/bottom_banner_image_sm.png";
-import add_address_iamge from "./SVG/add_address_image.svg";
 import organic_vegitable_image from "./PNG/organic_vegitable_image.png";
 import fresh_fruits_image from "./PNG/fresh_fruits_image.png";
 import bottles_image from "./PNG/bottles_image.png";
@@ -77,6 +84,9 @@ export const assets = {
   logo,
   chatran_logo,
   search_icon,
+  icon_instagram,
+  icon_youtube,
+  icon_linkedin,
   remove_icon,
   cross_icon,
   arrow_right_icon_colored,
@@ -792,9 +802,9 @@ export const dummyAddress = [
   {
     _id: "67b5b9e54ea97f71bbc196a0",
     userId: "67b5880e4d09769c5ca61644",
-    firstName: "Great",
-    lastName: "Stack",
-    email: "user.greatstack@gmail.com",
+    firstName: "Mordan",
+    lastName: "Grapher",
+    email: "mordangrapher@gmail.com",
     street: "Street 123",
     city: "Main City",
     state: "New State",

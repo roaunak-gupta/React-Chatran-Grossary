@@ -15,7 +15,7 @@ const Navbar = () => {
 
             <NavLink onClick={() => { setOpen(false) }} className='flex jusfity-center items-center' to='/'>
                 <img className='h-10' src={assets.chatran_logo} alt='Logo' />
-                <h1 className='logo-grossary font-[Oleo Script] text-2xl pl-2'>Grossary</h1>
+                <h1 className='logo-grossary text-primary-darkgreen text-2xl pl-2'>Grossary</h1>
             </NavLink>
 
             {/* Desktop Menu */}
@@ -60,17 +60,19 @@ const Navbar = () => {
 
             {/* Menu button for Mobile view */}
             <div className='flex sm:hidden'>
-                <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu" className="sm:hidden">
+                <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu" className="sm:hidden z-60">
                     {/* Menu Icon SVG */}
                     <img src={assets.menu_icon} alt='Menu' />
                 </button>
-                <img src={assets.profile_icon} alt='Profile' className='w-10 ml-2 sm:hidden' />
+                {user &&
+                    <img src={assets.profile_icon} alt='Profile' className='w-10 ml-2 sm:hidden' />
+                }
             </div>
 
 
             {/* Mobile Menu */}
             {open && (
-                <div className={`${open ? 'flex' : 'hidden'} absolute top-24 border-2 border-amber-500 w-full bg-white shadow-2xl py-4 flex-col items-start gap-2 left-0 px-5 text-md md:hidden`}>
+                <div className={`${open ? 'flex' : 'hidden'} z-100 absolute top-24 w-full bg-white shadow-2xl py-4 flex-col items-start gap-2 left-0 px-5 text-md md:hidden`}>
 
                     <NavLink className='hover:font-medium ml-3' to="/" onClick={() => { setOpen(false) }}><li>Home</li></NavLink >
                     <NavLink className='hover:font-medium ml-3' to="/product" onClick={() => { setOpen(false) }}><li>All Products</li></NavLink >
