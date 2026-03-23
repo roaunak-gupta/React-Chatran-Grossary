@@ -1,6 +1,7 @@
 import React from 'react'
 import { categories } from '../assets/assets'
 import { useAppContext } from '../context/AppContext'
+import { URL_ALL_PRODUCTS } from '../Utilities/Constants'
 
 const Categories = () => {
 
@@ -16,7 +17,7 @@ const Categories = () => {
                         className='group cursor-pointer px-3 py-5 gap-2 rounded-lg flex flex-col justify-center items-center'
                         style={{ backgroundColor: categories.bgColor }}
                         onClick={() => {
-                            navigate(`/products/${categories.path.toLowerCase()}`);
+                            navigate(`${URL_ALL_PRODUCTS}/${categories.path.toLowerCase()}`);
                             console.log("Clicked !");
                             scrollTo(0, 0);
                         }}>

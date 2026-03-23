@@ -57,16 +57,9 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="max-w-7xl mx-auto mt-12 pt-4 border-t border-neutral-700 flex justify-between items-center">
-                        <p className="text-neutral-400 text-sm">© 2026 Mordan Grapher Design</p>
+                    <div className="max-w-7xl mx-auto mt-12 pt-4 border-t border-neutral-700 flex justify-between items-center my-5">
+                        <p className="text-neutral-400 text-sm">© {new Date().getFullYear()} Mordan Grapher Design</p>
                         <p className='text-sm text-neutral-400'>All right reserved.</p>
-                    </div>
-                    <div className="relative">
-                        <div className="absolute inset-x-0 bottom-0 mx-auto w-full max-w-3xl h-full max-h-64 bg-green-500 rounded-full blur-[170px] pointer-events-none" />
-                        <h3 className="text-center font-extrabold leading-[0.7] text-transparent text-[clamp(3rem,15vw,15rem)] [-webkit-text-stroke:1px_#0D542B] mt-6" >
-                            Chatran
-                            Grossary
-                        </h3>
                     </div>
                 </footer>
             </div>

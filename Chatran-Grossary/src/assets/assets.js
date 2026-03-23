@@ -117,6 +117,7 @@ export const assets = {
 };
 
 export const categories = [
+  
   {
     text: "Organic veggies",
     path: "Vegetables",
