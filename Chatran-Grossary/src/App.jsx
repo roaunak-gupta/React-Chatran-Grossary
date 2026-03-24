@@ -10,7 +10,6 @@ import { URL_ALL_PRODUCTS, URL_CART, URL_CONTECTS, URL_HOME, URL_MY_ORDERS, URL_
 import Contacts from './pages/Contacts';
 import MyOrders from './pages/MyOrders';
 import ProductsCategories from './pages/ProductsCategories';
-import ProductCard from './components/ProductCard';
 import ProductDetails from './pages/ProductDetails';
 import MyCart from './pages/MyCart';
 

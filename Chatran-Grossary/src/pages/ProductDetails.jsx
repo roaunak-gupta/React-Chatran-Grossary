@@ -7,7 +7,7 @@ import ProductCard from "../components/ProductCard";
 
 const ProductDetails = () => {
 
-    const { products, navigate, currency, addToCart } = useAppContext();
+    const { products, navigate, addToCart } = useAppContext();
     const { id } = useParams();
     const [thumbnail, setThumbnail] = useState(null);
     const [relatedProducts, setRelatedProducts] = useState([]);
@@ -32,6 +32,8 @@ const ProductDetails = () => {
     }, [product])
 
     return product && (
+
+        // BreadCrums
         <div className="mt-16">
             <p>
                 <Link to={URL_HOME}>Home</Link> /
@@ -59,9 +61,10 @@ const ProductDetails = () => {
                 <div className="text-sm w-full md:w-1/2">
                     <h1 className="text-3xl font-medium">{product.name}</h1>
 
+                    {/* Star Rating  */}
                     <div className="flex items-center gap-0.5 mt-1">
                         {Array(5).fill('').map((_, i) => (
-                            <img className="md:w-4 w-3.5" src={i > 4 ? assets.star_icon : assets.star_dull_icon} alt="" />
+                            <img className="md:w-4 w-3.5" src={i < 4 ? assets.star_icon : assets.star_dull_icon} alt="" />
                         ))}
                         <p className="text-base ml-2">(4)</p>
                     </div>

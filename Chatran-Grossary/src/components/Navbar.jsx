@@ -2,12 +2,12 @@ import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { useAppContext } from '../context/AppContext'
-import { URL_HOME, URL_ALL_PRODUCTS, URL_CONTECTS, URL_MY_ORDERS } from '../Utilities/Constants'
+import { URL_HOME, URL_ALL_PRODUCTS, URL_CONTECTS, URL_MY_ORDERS, URL_CART } from '../Utilities/Constants'
 
 const Navbar = () => {
 
     const [open, setOpen] = React.useState(false);
-    const { user, setUser, setShowUserLogin, navigate, searchQuery, setSearchQuery } = useAppContext();
+    const { user, setUser, setShowUserLogin, navigate, searchQuery, setSearchQuery, getCartCount } = useAppContext();
 
     const logout = async () => {
         setUser(null);
@@ -73,10 +73,10 @@ const Navbar = () => {
 
                 {/* Cart Button */}
                 <div onClick={() => {
-                    navigate("/cart")
+                    navigate(URL_CART)
                 }} className="relative cursor-pointer">
                     <img src={assets.cart_icon_2} alt="Cart" />
-                    <button className="absolute -top-2 -right-3 text-xs text-primary-lightgreen bg-primary-darkgreen w-4.5 h-4.5 rounded-full hover:bg-primary-lightgreen hover:text-primary-darkgreen">3</button>
+                    <button className="absolute -top-2 -right-3 text-xs text-primary-lightgreen bg-primary-darkgreen w-4.5 h-4.5 rounded-full hover:bg-primary-lightgreen hover:text-primary-darkgreen">{getCartCount()}</button>
                 </div>
 
                 {/* Sign Button */}
