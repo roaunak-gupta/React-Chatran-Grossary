@@ -5,4 +5,6 @@ export const URL_PRODUCTS_CATEGORY = "/products/:category";
 export const URL_PRODUCTS_CATEGORY_ID = "/products/:category/:id";
 export const URL_CONTECTS = "/contact";
 export const URL_MY_ORDERS = "/myorders";
-export const URL_CART = "/cart";
+export const URL_CART = "/mycart";
+export const URL_ADD_ADDRESS = "/add-address";
+export const TAX_VALUE = 2;

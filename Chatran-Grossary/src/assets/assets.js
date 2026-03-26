@@ -117,7 +117,7 @@ export const assets = {
 };
 
 export const categories = [
-  
+
   {
     text: "Organic veggies",
     path: "Vegetables",
@@ -800,7 +800,20 @@ export const dummyProducts = [
 ];
 
 export const dummyAddress = [
+
   {
+    _id: "sdf21sdfs5df65sdf4s5dfsdf16",
+    userId: "5sd4f6s54fds1csd5c4s5dc1a5hgad51",
+    firstName: "Roaunak",
+    lastName: "Gupta",
+    email: "roaunakgupta@gmail.com",
+    street: "Sut Meal Ashok Nagar Post- Somaiya Nagar",
+    city: "Barabanki",
+    state: "Uttar Pradesh",
+    zipcode: 225123,
+    country: "IN",
+    phone: "+91 8840644954",
+  }, {
     _id: "67b5b9e54ea97f71bbc196a0",
     userId: "67b5880e4d09769c5ca61644",
     firstName: "Mordan",
@@ -812,7 +825,7 @@ export const dummyAddress = [
     zipcode: 123456,
     country: "IN",
     phone: "1234567890",
-  },
+  }
 ];
 
 export const dummyOrders = [
