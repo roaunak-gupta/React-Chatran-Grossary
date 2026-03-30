@@ -1,7 +1,6 @@
-import React from 'react'
-import { categories } from '../assets/assets'
-import { useAppContext } from '../context/AppContext'
-import { URL_ALL_PRODUCTS } from '../Utilities/Constants'
+import { categories } from '../../assets/assets'
+import { useAppContext } from '../../context/AppContext'
+import { URL_ALL_PRODUCTS } from '../../Utilities/Constants'
 
 const Categories = () => {
 

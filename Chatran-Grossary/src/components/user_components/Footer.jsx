@@ -1,5 +1,5 @@
-import { Link } from "react-router"
-import { assets, footerLinks } from "../assets/assets"
+import { Link } from "react-router-dom"
+import { assets, footerLinks } from "../../assets/assets"
 
 const Footer = () => {
     return (

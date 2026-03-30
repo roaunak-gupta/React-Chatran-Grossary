@@ -1,6 +1,6 @@
-import { useAppContext } from '../context/AppContext'
-import { assets, dummyAddress } from '../assets/assets';
-import { URL_ADD_ADDRESS, URL_ALL_PRODUCTS, TAX_VALUE } from '../Utilities/Constants'
+import { useAppContext } from '../../context/AppContext'
+import { assets, dummyAddress } from '../../assets/assets';
+import { URL_ADD_ADDRESS, URL_ALL_PRODUCTS, TAX_VALUE } from '../../Utilities/Constants'
 import { useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { useState } from 'react';
@@ -59,7 +59,7 @@ const MyCart = () => {
 
                             <div key={index} className="grid grid-cols-[2fr_1fr_1fr] text-gray-500 items-center text-sm md:text-base font-medium pt-3">
                                 <div onClick={() => {
-                                    navigate(`${URL_ALL_PRODUCTS}/${product.catagory.toLowerCase()}/${product._id}`);
+                                    navigate(`${URL_ALL_PRODUCTS}/${product.category.toLowerCase()}/${product._id}`);
                                     scrollTo(0, 0);
                                 }} className="flex items-center md:gap-6 gap-3">
                                     <div className="cursor-pointer w-24 h-24 flex items-center justify-center border border-gray-300 rounded overflow-hidden">
@@ -100,9 +100,8 @@ const MyCart = () => {
                         </button>
 
                     </div>
+
                     {/* Shopping Title with Item Count */}
-
-
                     <div className="max-w-90 w-full bg-gray-100/40 p-5 max-md:mt-16 border border-gray-300/70">
 
                         <h2 className="text-xl md:text-xl font-medium">Order Summary</h2>

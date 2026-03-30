@@ -1,6 +1,6 @@
-import { assets } from "../assets/assets";
-import { useAppContext } from "../context/AppContext";
-import { URL_ALL_PRODUCTS } from '../Utilities/Constants'
+import { assets } from "../../assets/assets";
+import { useAppContext } from "../../context/AppContext";
+import { URL_ALL_PRODUCTS } from '../../Utilities/Constants'
 
 const ProductCard = ({ product }) => {
 

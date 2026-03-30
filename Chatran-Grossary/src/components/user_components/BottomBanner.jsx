@@ -1,5 +1,4 @@
-import React from 'react'
-import { assets, features } from '../assets/assets.js'
+import { assets, features } from '../../assets/assets.js'
 
 const BottomBanner = () => {
     return (

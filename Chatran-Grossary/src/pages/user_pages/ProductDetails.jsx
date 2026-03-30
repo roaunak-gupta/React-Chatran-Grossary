@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { useAppContext } from "../context/AppContext";
-import { Link, useParams } from "react-router";
-import { URL_ALL_PRODUCTS, URL_HOME, URL_CART, RUPPEE } from "../Utilities/Constants";
-import { assets } from "../assets/assets";
-import ProductCard from "../components/ProductCard";
+import { useAppContext } from "../../context/AppContext";
+import { Link, useParams } from "react-router-dom";
+import { URL_ALL_PRODUCTS, URL_HOME, URL_CART, RUPPEE } from "../../Utilities/Constants";
+import { assets } from "../../assets/assets";
+import ProductCard from "../../components/user_components/ProductCard";
 
 const ProductDetails = () => {
 

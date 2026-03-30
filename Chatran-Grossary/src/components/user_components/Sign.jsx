@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Chatran_Grossary from './Chatran_Grossary'
 import { Link } from 'react-router'
-import { useAppContext } from '../context/AppContext';
+import { useAppContext } from '../../context/AppContext';
 
 const Sign = () => {
 
@@ -48,7 +48,7 @@ const Sign = () => {
                             <label className="font-medium text-white/80">Username</label>
                             <input
                                 onChange={(e) => setName(e.target.value)} value={name}
-                                placeholder="Mordan Grapher"
+                                placeholder="Enter your Name"
                                 className="mt-2 rounded-md ring ring-gray-200 focus:ring-2 focus:ring-primary-lightgreen outline-none px-3 py-3 w-full text-white"
                                 required
                                 type="text"
@@ -61,7 +61,7 @@ const Sign = () => {
                         <label className="font-medium text-white/80">Email</label>
                         <input
                             onChange={(e) => setEmail(e.target.value)} value={email}
-                            placeholder="mordangrapher@gmail.com"
+                            placeholder="Enter your Email"
                             className="mt-2 rounded-md ring ring-gray-200 focus:ring-2 focus:ring-primary-lightgreen outline-none px-3 py-3 w-full text-white"
                             required
                             type="email"
