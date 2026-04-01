@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAppContext } from '../../context/AppContext'
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 import { categories } from '../../assets/assets';
 import ProductCard from '../../components/user_components/ProductCard';
 
@@ -10,7 +10,7 @@ const ProductsCategories = () => {
     const { category } = useParams();
 
     const searchCategories = categories.find((item) => item.path.toLowerCase() === category)
-
+    
     const filteredProducts = products.filter((product) => product.category.toLowerCase() === category)
     return (
         <div className='mt-16'>

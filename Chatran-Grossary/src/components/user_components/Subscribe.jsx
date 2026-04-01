@@ -1,5 +1,6 @@
+import React from 'react'
 
-function Subscribe() {
+export default function Example() {
     return (
 
         <div className="w-full bg-gray-50 rounded-2xl px-2 text-center text-white py-20 flex flex-col items-center justify-center mt-10">
@@ -14,5 +15,3 @@ function Subscribe() {
         </div>
     );
 };
-
-export default Subscribe;

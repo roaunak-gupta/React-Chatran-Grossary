@@ -48,7 +48,7 @@ const Sign = () => {
                             <label className="font-medium text-white/80">Username</label>
                             <input
                                 onChange={(e) => setName(e.target.value)} value={name}
-                                placeholder="Enter your Name"
+                                placeholder="Mordan Grapher"
                                 className="mt-2 rounded-md ring ring-gray-200 focus:ring-2 focus:ring-primary-lightgreen outline-none px-3 py-3 w-full text-white"
                                 required
                                 type="text"
@@ -61,7 +61,7 @@ const Sign = () => {
                         <label className="font-medium text-white/80">Email</label>
                         <input
                             onChange={(e) => setEmail(e.target.value)} value={email}
-                            placeholder="Enter your Email"
+                            placeholder="mordangrapher@gmail.com"
                             className="mt-2 rounded-md ring ring-gray-200 focus:ring-2 focus:ring-primary-lightgreen outline-none px-3 py-3 w-full text-white"
                             required
                             type="email"
