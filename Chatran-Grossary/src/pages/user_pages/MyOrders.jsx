@@ -11,6 +11,8 @@ const MyOrders = () => {
                 <p className='text-2xl font-medium uppercase'>My Orders</p>
                 <div className='w-16 h-0.5 bg-primary-lightgreen rounded-full'></div>
             </div>
+
+            
         </div>
     )
 }
