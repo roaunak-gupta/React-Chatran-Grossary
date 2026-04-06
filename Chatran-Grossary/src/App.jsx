@@ -28,7 +28,8 @@ function App() {
   const { showUserLogin, isSeller } = useAppContext();
 
   return (
-    <>
+    <div className='text-default min-h-screen text-gray-700 bg-white'>
+
       {/* Navigation Components */}
       {isSellerPath ? null : <Navbar />}
       {showUserLogin ? <Sign /> : null}
@@ -51,10 +52,11 @@ function App() {
           <Route path={URL_ADD_ADDRESS} element={<AddAddress />} />
 
           // Seller Route
-          <Route path={URL_IS_SELLER} element={isSeller ? <SellerLayout /> : <SellerLogin />} />
-          {/* <Route index element={isSeller ? <AddProducts /> : null} /> */}
-          <Route path={URL_SELLER_PRODUCT_LIST} element={<ProductList />} />
-          <Route path={URL_SELLER_ORDER_LIST} element={<Orders />} />
+          <Route path={URL_IS_SELLER} element={isSeller ? <SellerLayout /> : <SellerLogin />}>
+            <Route index element={isSeller ? <AddProducts /> : null} />
+            <Route path={URL_SELLER_PRODUCT_LIST} element={<ProductList />} />
+            <Route path={URL_SELLER_ORDER_LIST} element={<Orders />} />
+          </Route>
 
           //Error Page
           <Route path='*' element={<ErrorPage />} />
@@ -63,7 +65,7 @@ function App() {
 
       {/* Footer Components */}
       {isSellerPath ? null : <Footer />}
-    </>
+    </div>
   )
 }
 

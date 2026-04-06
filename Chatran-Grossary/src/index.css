@@ -16,3 +16,7 @@
   font-size: 2rem;
   padding: 10px;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
