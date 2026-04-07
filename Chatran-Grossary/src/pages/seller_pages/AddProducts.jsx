@@ -13,6 +13,7 @@ const AddProducts = () => {
   const onSubmitHandler = async (event) => {
     event.preventDefault();
   }
+
   return (
 
     <div className='mt-5 ml-5'>
@@ -66,6 +67,7 @@ const AddProducts = () => {
               ))}
             </select>
           </div>
+          
           <div className="flex items-center gap-5 flex-wrap">
             <div className="flex-1 flex flex-col gap-1 w-32">
               <label className="text-base font-medium" htmlFor="product-price">Product Price</label>
